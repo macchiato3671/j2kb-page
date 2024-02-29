@@ -1,0 +1,106 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="wrapper">
+	<div id="page" class="container">
+		<div id="content">
+			<div class="title">
+				<h2>History</h2>
+				<span class="byline"></span> </div>
+				<div id="history">
+					<h2>2020</h2>
+						<div class="list_right">
+							<div>
+								<ul>
+		 							<li>
+										<dl>
+											<dt>4.18</dt>
+											<dd>J2KB 스터디 시작</dd>
+										</dl>
+										<dl>
+					 						<dt>4.18</dt>
+					 						<dd>점프 투 파이썬 공부 시작</dd>
+										</dl>
+			 						</li>
+			 						<li>
+				 						<dl>
+					 						<dt>5.9</dt>
+					 						<dd>백준 알고리즘 공부 시작</dd>
+				 						</dl>
+				 						<dl>
+					 						<dt>5.23</dt>
+					 						<dd>J2KB project 시작<br>
+													(권혁일, 백현준) 백엔드<br>
+													(전준형, 김택림) 프론트 엔드</dd>
+				 						</dl>
+			 						</li>
+			 						<li>
+				 						<dl>
+											<dt>6.26</dt>
+											<dd>J2KB 강릉 여행</dd>
+				 						</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>7.7</dt>
+											<dd>권혁일 입대</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>8.25</dt>
+											<dd>전준형 입대</dd>
+										</dl>
+									</li>
+		 						</ul>
+	 						</div>
+ 						</div><!--list_right-->
+ 					<h2>2021</h2>
+ 						<div class="list_left">
+	 						<div>
+		 						<ul>
+			 						<li>
+				 						<dl>
+					 						<dd>김택림 입대</dd>
+					 						<dt>1.18</dt>
+				 						</dl>
+			 						</li>
+			 						<li>
+				 						<dl>
+					 						<dd>백현준 입대</dd>
+					 						<dt>2.2</dt>
+				 						</dl>
+			 						</li>
+		 						</ul>
+	 						</div>
+	 						<span></span>
+ 						</div><!--list_right-->
+					</div><!--history-->
+
+			<div id="two-column">
+				<div id="tbox1">
+				    </div>
+				<div id="tbox2">
+					<div class="title">
+						<h2></h2>
+					</div>
+        </div>
+			</div>
+		</div>
+		<div id="sidebar">
+			<div class="box1">
+				<div class="title">
+					<h2>Site Features</h2>
+				</div>
+				<ul class="style2">
+					<li><a href="{% url 'memo' %}">Files or Website</a></li>
+					<li><a href="{% url 'todolist' %}">To-Do-List</a></li>
+					<li><a href="{% url 'photopage' %}">Photos</a></li>
+					<li><a href="{% url 'generalforum' %}">General Forum</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

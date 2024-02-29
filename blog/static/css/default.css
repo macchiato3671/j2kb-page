@@ -1,0 +1,666 @@
+@font-face {
+font-family: 'InfinitySans-RegularA1';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF url(images/bg01.png) repeat;
+	font-family: 'InfinitySans-RegularA1';
+	font-size: 12pt;
+	font-weight: 300;
+	color: #363636;
+}
+
+.lineheight{
+	line-height: 50px;
+}
+
+.J2KB{
+	font-weight: normal;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul
+{
+	margin-top: 0px;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #2C6503;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a img
+{
+	border: none;
+}
+
+	.image
+	{
+		display: inline-block;
+	}
+
+		.image img
+		{
+			display: block;
+			width: 100%;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+
+hr
+{
+	display: none;
+}
+
+/** WRAPPER */
+
+#wrapper {
+	background: #FFFFFF url(images/bg01.png) repeat;
+}
+
+.container
+{
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header
+{
+	position: relative;
+	height: 150px;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+		top: 3em;
+		left: 0;
+		width: 100%;
+	}
+
+	#logo h1
+	{
+		display: inline-block;
+		font-size: 2.5em;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #FFF;
+	}
+
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	#menu ul
+	{
+		display: inline-block;
+	}
+
+	#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+
+	#menu li a, #menu li span
+	{
+		display: block;
+		padding: 0em 1.5em;
+		height: 150px;
+		letter-spacing: 0.20em;
+		line-height: 150px;
+		text-decoration: none;
+		font-size: 0.90em;
+		font-weight: 600;
+		text-transform: uppercase;
+		outline: 0;
+		color: #FFF;
+	}
+
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	}
+
+	#menu .current_page_item a
+	{
+
+		background: rgba(0,0,0,0.1);
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page
+	{
+		position: relative;
+		overflow: hidden;
+		padding: 6em 0em 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+		float: right;
+		width: 790px;
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		float: left;
+		width: 345px;
+	}
+
+	#sidebar .title h2
+	{
+		font-size: 1.6em;
+	}
+
+	#sidebar .box1
+	{
+		margin-bottom: 3em;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+#header-wrapper
+{
+	overflow: hidden;
+	height: 600px;
+	background: url('images/header.jpg') no-repeat top center;
+	background-size: 100%;
+}
+
+#header-wrapper:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('images/bg01.png');
+	opacity: .1;
+}
+
+#header-wrapper2
+{
+	background: rgba(0,0,0,.1);
+	box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,.05);
+}
+
+
+
+	ul.style2
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	ul.style2 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+
+	ul.style2 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio-wrapper
+	{
+		background: rgba(39, 37, 50, 0.7);
+		padding: 3em 0em;
+	}
+
+	#portfolio
+	{
+		overflow: hidden;
+		text-align: center;
+		color: #A3BD77;
+	}
+
+	#portfolio .title h2
+	{
+		color: #FFF;
+	}
+
+	#portfolio .byline
+	{
+		color: #A3BD77;
+	}
+
+	#column1,
+	#column2,
+	#column3,
+	#column4
+	{
+		width: 282px;
+		color: rgba(182, 255, 0, 1);
+	}
+
+	#column1,
+	#column2
+	{
+		float: left;
+		margin-right: 24px;
+	}
+
+	#column3
+	{
+		float: left;
+	}
+
+	#column4
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 3em 0em;
+	}
+
+	#copyright p
+	{
+		letter-spacing: 0.20em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.80em;
+		color: #6F6F6F;
+	}
+
+	#copyright a
+	{
+		text-decoration: none;
+		color: #8C8C8C;
+	}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 3em;
+	}
+
+	.title h2
+	{
+		letter-spacing: 0.20em;
+		font-weight: 700;
+		font-size: 2em;
+		color: #171717;
+	}
+
+	.title .byline
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #6F6F6F;
+	}
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 2em;
+		padding: 1em 3em;
+		background: #5F9703;
+		border-radius: 10px;
+		-moz-transition: opacity 0.25s ease-in-out;
+		-webkit-transition: opacity 0.25s ease-in-out;
+		-o-transition: opacity 0.25s ease-in-out;
+		-ms-transition: opacity 0.25s ease-in-out;
+		transition: opacity 0.25s ease-in-out;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 0.90em;
+		color: #FFF;
+	}
+
+		.button:hover
+		{
+		}
+
+		.button:active
+		{
+		}
+
+
+/*********************************************************************************/
+/* Two Column                                                                    */
+/*********************************************************************************/
+
+	#two-column
+	{
+		padding-top: 3em;
+	}
+
+	#two-column .title h2
+	{
+		font-size: 1.6em;
+	}
+
+	#two-column #tbox1
+	{
+		float: left;
+		width: 370px;
+	}
+
+	#two-column #tbox2
+	{
+		float: right;
+		width: 370px;
+	}
+
+	#two-column #tbox2 ul.style2
+	{
+		margin-top: 2.2em;
+	}
+
+	/*********************************************************************************/
+  /* Group History                                                                    */
+  /*********************************************************************************/
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*박스의 크기를 테두리를 기준으로 정한다. */
+}
+
+ul,li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none
+}
+
+#history {
+  width: 1200px;
+  margin: 0;
+}
+
+#history h2 {
+  margin-left: 400px;
+  font-size: 24px;
+  color: #444;
+  line-height: 1;
+  margin-top: 30px;
+}
+
+.list_right {
+   display: table;
+   width: 100%;
+   table-layout: fixed; /* 동일한 넓이를 가진 table */
+  }
+
+.list_right span {
+   display: table-cell;
+   vertical-align: top; /* table의 한 셀에서 포함하고 있는 내용을 수직 정렬*/
+  }
+
+.list_right div {
+  position: relative; /* 태그 위치 살짝 변경하고 싶을 때 */
+  display: table-cell;
+  vertical-align: top;
+  }
+
+.list_right div:before {
+  content: "";
+  position: absolute;
+  left: 405px;
+  width: 1px;
+  height: 100%;
+  background: #dfdfdf;
+  }
+
+.list_right div ul {
+  margin-top: 20px;
+  }
+
+.list_right div ul li {
+   display: table;
+   position: relative;
+   width: 100%;
+   padding-left: 20px;
+   margin-left: 400px;
+   }
+
+
+.list_right div ul li+li {
+    margin-top: 20px;
+    margin-left: 400px;
+    }
+
+ .list_right div ul li:before {
+   content: "";
+   position: absolute;
+   left: -4px;
+   top: 7px;
+   width: 12px;
+   height: 12px;
+   border: 3px solid #0a4a9f; /* 태그의 테두리 설정  */
+   border-radius: 50%;
+   } /* 연혁 오른쪽 부분의 동그란거 설정 */
+
+  .list_right dl {
+    text-align: left;
+    display: table;
+    width: 100%;
+    }
+
+  .list_right dl dt {
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 400px;
+    }
+
+  .list_right dl dd {
+    width: 90px;
+    display: table-cell;
+    vertical-align: middle; /* 요소의 중간을 부모의 소문자 중간에 맞춘다. */
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    }
+
+  .list_left {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    }
+
+  .list_left span {
+    display: table-cell;
+    vertical-align: top;
+    }
+
+  .list_left div {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    }
+
+  .list_left div:before {
+    content: "";
+    position: absolute;
+    right: 193px;
+    width: 1px;
+    height: 100%;
+    background: #dfdfdf;
+    }
+
+  .list_left div ul {
+     margin-top: 20px;
+     }
+
+  .list_left div ul li {
+    display: table;
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    }
+
+  .list_left div ul li+li {
+     margin-top: 20px;
+     }
+
+  .list_left div ul li:before {
+    content: "";
+    position: absolute;
+    right: 185px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #0a4a9f;
+    border-radius: 50%;
+    }
+
+  .list_left dl {
+    text-align: right;
+    display: table;
+    width: 100%;
+    padding-right: 208px;
+    }
+
+  .list_left dl dt {
+     width: 40px;
+     display: table-cell;
+     vertical-align: middle;
+     font-size: 14px;
+     color: #444;
+     font-weight: bold;
+     text-align: right;
+     }
+
+  .list_left dl dd {
+     width: 90px;
+     display: table-cell;
+     vertical-align: middle;
+     font-size: 13px;
+     color: #444;
+     text-align: right;
+    }
